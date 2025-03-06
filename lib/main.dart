@@ -76,8 +76,11 @@ class MyApp extends StatelessWidget {
               const SizedBox(height: 12),
               SizedBox(
                 width: 220,
-                child: ElevatedButton(
+                child: ElevatedButton.icon(
                   onPressed: () {},
+                  icon: const Icon(Icons.catching_pokemon,
+                      size: 22, color: Colors.white),
+                  label: const Text('Button', style: TextStyle(fontSize: 22)),
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
                     backgroundColor: Colors.blue,
@@ -87,7 +90,6 @@ class MyApp extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 24, vertical: 12),
                   ),
-                  child: const Text('Button', style: TextStyle(fontSize: 22)),
                 ),
               ),
               const SizedBox(height: 12),
